@@ -1,5 +1,6 @@
 package com.uchenna.todoapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -12,7 +13,6 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         usernameDisplay = findViewById(R.id.usernameDisplay)
 
-        usernameDisplay.text= "Hello human beings"
+        usernameDisplay.text = intent.getStringExtra("username")
     }
-
 }
